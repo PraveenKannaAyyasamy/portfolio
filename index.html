@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#ffffff" id="meta-theme" />
+    <meta
+      name="description"
+      content="Praveen Kanna — Software Engineer (~3+ yrs). Java, Spring Boot, Angular, React. APIs, system design, regulated domains. Vivriti Capital. Chennai."
+    />
+    <meta property="og:title" content="Praveen Kanna | Software Engineer" />
+    <meta property="og:description" content="Praveen Kanna — Software Engineer (~3+ yrs). Java, Spring Boot, Angular, React. APIs, system design, regulated domains. Vivriti Capital. Chennai." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/164140467?v=4" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Praveen Kanna | Software Engineer" />
+    <meta name="twitter:description" content="Praveen Kanna — Software Engineer (~3+ yrs). Java, Spring Boot, Angular, React. APIs, system design, regulated domains. Chennai." />
+    <meta name="twitter:url" content="https://praveenkannaayyasamy.github.io/portfolio/" />
+    <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/164140467?v=4" />
+    <!-- Canonical site URL — change both links if you use a custom domain (e.g. Netlify). -->
+    <link rel="canonical" href="https://praveenkannaayyasamy.github.io/portfolio/" />
+    <meta property="og:url" content="https://praveenkannaayyasamy.github.io/portfolio/" />
+    <title>Praveen Kanna | Software Engineer</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Praveen Kanna",
+        "url": "https://praveenkannaayyasamy.github.io/portfolio/",
+        "jobTitle": "Software Engineer",
+        "email": "mailto:praveenkanna530@gmail.com",
+        "telephone": "+91-7904632158",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Chennai",
+          "addressRegion": "Tamil Nadu",
+          "addressCountry": "IN"
+        },
+        "sameAs": [
+          "https://github.com/PraveenKannaAyyasamy",
+          "https://www.linkedin.com/in/praveen-kanna-ayyasamy",
+          "https://medium.com/@praveenkannaayyasamy",
+          "https://www.instagram.com/praveenkannaayyasamy/",
+          "https://www.youtube.com/@PraveenKannaAyyasamy"
+        ],
+        "knowsAbout": [
+          "Java",
+          "Spring Boot",
+          "Angular",
+          "React",
+          "REST APIs",
+          "Docker",
+          "MongoDB",
+          "Keycloak",
+          "System design",
+          "Software architecture",
+          "Design patterns",
+          "Generative AI"
+        ]
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://avatars.githubusercontent.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="preconnect" href="https://api.github.com" crossorigin />
+    <link rel="preconnect" href="https://medium.com" crossorigin />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t === "dark" || (!t && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+            document.documentElement.setAttribute("data-theme", "dark");
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <noscript>
+      <style>
+        .reveal {
+          opacity: 1 !important;
+          transform: none !important;
+        }
+      </style>
+    </noscript>
+  </head>
+  <body>
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="logo" href="#top" aria-label="Home">
+          <span class="logo-dot logo-dot--b"></span>
+          <span class="logo-dot logo-dot--r"></span>
+          <span class="logo-dot logo-dot--y"></span>
+          <span class="logo-dot logo-dot--g"></span>
+          <span class="logo-text">Praveen Kanna</span>
+        </a>
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <ul class="site-nav__list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Work</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="now.html">Now</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <ul class="site-nav__actions">
+            <li>
+              <a
+                class="nav-resume"
+                href="resume/Praveen-Kanna-Resume.pdf"
+                download
+                target="_blank"
+                rel="noopener noreferrer"
+                >Résumé</a
+              >
+            </li>
+            <li>
+              <a class="nav-cta" href="https://www.linkedin.com/in/praveen-kanna-ayyasamy" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </li>
+          </ul>
+        </nav>
+        <button
+          type="button"
+          class="theme-toggle"
+          id="theme-toggle"
+          aria-label="Toggle color theme"
+          title="Light / dark theme"
+        >
+          <span class="theme-toggle__sun" aria-hidden="true">☀</span>
+          <span class="theme-toggle__moon" aria-hidden="true">☾</span>
+        </button>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="top" class="hero">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="hero-layout container">
+          <div class="hero-aside">
+            <div class="hero-avatar-wrap animate-hero" style="--d: 0ms">
+              <img
+                class="hero-avatar"
+                src="images/profile.png"
+                alt="Portrait of Praveen Kanna"
+                width="140"
+                height="140"
+                decoding="async"
+                fetchpriority="high"
+                loading="eager"
+                onerror="this.onerror=null;this.src='https://avatars.githubusercontent.com/u/164140467?v=4';"
+              />
+            </div>
+            <p class="hero-badge animate-hero" style="--d: 40ms">Open to full-stack &amp; backend roles</p>
+            <ul class="hero-quickfacts animate-hero" style="--d: 80ms">
+              <li><strong>3+ yrs</strong> professional delivery</li>
+              <li><strong>Current</strong> Vivriti Capital</li>
+              <li><strong>Stack</strong> Java · Spring Boot · Angular · React</li>
+            </ul>
+          </div>
+          <div class="hero-main">
+            <h1 class="hero-title animate-hero" style="--d: 100ms">
+              <span class="hero-title__name name-gradient">Praveen Kanna</span>
+            </h1>
+    
+            <p class="hero-role animate-hero" style="--d: 150ms">
+              Software engineer — APIs, secure backends, and user-focused web apps. Targeting
+              <strong>backend</strong> and <strong>full-stack</strong> roles where reliability, regulated domains, and
+              clear delivery matter.
+            </p>
+            <p class="hero-funline animate-hero" id="hero-funline" style="--d: 175ms" role="note">
+              <span class="hero-funline__emoji" aria-hidden="true">✨</span>
+              <span id="hero-funline-text">Ctrl+S is a quiet thank-you to Future You.</span>
+            </p>
+            <p class="hero-sub animate-hero" style="--d: 190ms">
+              I ship maintainable systems in <strong>Java</strong> and <strong>Spring Boot</strong>, with
+              <strong>Angular</strong> and <strong>React</strong> on the frontend. Comfortable in regulated
+              environments (financial services), CI/CD with Docker and Jenkins, and data stores including MySQL,
+              MongoDB, and Cassandra. I care about <strong>software architecture</strong> and <strong>system design</strong> for
+              maintainable services. Certified in <strong>Google Cloud</strong> (Digital Leader) and
+              <strong>Core Java</strong> (JetBrains Academy).
+            </p>
+            <div class="hero-actions animate-hero" style="--d: 230ms">
+              <a class="btn btn-primary" href="#experience">View experience</a>
+              <a
+                class="btn btn-ghost"
+                href="resume/Praveen-Kanna-Resume.pdf"
+                download
+                target="_blank"
+                rel="noopener noreferrer"
+                >Résumé (PDF)</a
+              >
+              <a class="btn btn-ghost" href="resume.html" target="_blank" rel="noopener noreferrer">Printable CV</a>
+              <a class="btn btn-ghost" href="mailto:praveenkanna530@gmail.com">Email</a>
+              <a
+                class="btn btn-ghost"
+                href="https://www.linkedin.com/in/praveen-kanna-ayyasamy"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+            </div>
+            <p class="hero-tech-follow animate-hero" style="--d: 250ms">
+              <span class="hero-tech-follow__label">Technical content</span>
+              <span class="hero-tech-follow__note"
+                >Writing on Medium; shorter engineering notes on Instagram and YouTube — not a lifestyle feed.</span
+              >
+              <span class="hero-tech-follow__links">
+                <a
+                  class="hero-tech-follow__link"
+                  href="https://medium.com/@praveenkannaayyasamy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Medium — technical articles"
+                  title="Longer technical articles"
+                  >Medium</a
+                >
+                <span class="hero-tech-follow__dot" aria-hidden="true">·</span>
+                <a
+                  class="hero-tech-follow__link"
+                  href="https://www.instagram.com/praveenkannaayyasamy/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram — technical engineering content"
+                  title="Technical posts: demos, tips, and build notes"
+                  >Instagram</a
+                >
+                <span class="hero-tech-follow__dot" aria-hidden="true">·</span>
+                <a
+                  class="hero-tech-follow__link"
+                  href="https://www.youtube.com/@PraveenKannaAyyasamy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="YouTube — technical engineering videos"
+                  title="Technical videos: walkthroughs and deep dives"
+                  >YouTube</a
+                >
+              </span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="stack" class="stack-section" aria-labelledby="stack-heading">
+        <div class="container">
+          <div class="stack-head reveal">
+            <h2 id="stack-heading" class="stack-heading">
+              <span class="stack-heading__text">Stack I ship with</span>
+            </h2>
+            <p class="section-subtitle reveal">Tools and platforms I use on production work.</p>
+          </div>
+          <ul class="stack-icons reveal" aria-label="Technologies">
+            <li>
+              <a
+                class="stack-icons__link"
+                href="https://dev.java/learn/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Java — official learning hub"
+                ><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="" width="40" height="40" decoding="async" /><span>Java</span></a
+              >
+            </li>
+            <li>
+              <a
+                class="stack-icons__link"
+                href="https://spring.io/projects/spring-boot"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Spring Boot documentation"
+                ><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" alt="" width="40" height="40" decoding="async" /><span>Spring</span></a
+              >
+            </li>
+            <li>
+              <a
+                class="stack-icons__link"
+                href="https://angular.dev"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Angular documentation"
+                ><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg" alt="" width="40" height="40" decoding="async" /><span>Angular</span></a
+              >
+            </li>
+            <li>
+              <a
+                class="stack-icons__link"
+                href="https://react.dev"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="React documentation"
+                ><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="" width="40" height="40" decoding="async" loading="lazy" /><span>React</span></a
+              >
+            </li>
+            <li>
+              <a
+                class="stack-icons__link"
+                href="https://www.typescriptlang.org/docs/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="TypeScript documentation"
+                ><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="" width="40" height="40" decoding="async" loading="lazy" /><span>TypeScript</span></a
+              >
+            </li>
+            <li>
+              <a
+                class="stack-icons__link"
+                href="https://dev.mysql.com/doc/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="MySQL documentation"
+                ><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="" width="40" height="40" decoding="async" loading="lazy" /><span>MySQL</span></a
+              >
+            </li>
+            <li>
+              <a
+                class="stack-icons__link"
+                href="https://docs.docker.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Docker documentation"
+                ><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="" width="40" height="40" decoding="async" loading="lazy" /><span>Docker</span></a
+              >
+            </li>
+            <li>
+              <a
+                class="stack-icons__link"
+                href="https://www.jenkins.io/doc/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Jenkins documentation"
+                ><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg" alt="" width="40" height="40" decoding="async" loading="lazy" /><span>Jenkins</span></a
+              >
+            </li>
+            <li>
+              <a
+                class="stack-icons__link"
+                href="https://git-scm.com/doc"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Git documentation"
+                ><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="" width="40" height="40" decoding="async" loading="lazy" /><span>Git</span></a
+              >
+            </li>
+            <li>
+              <a
+                class="stack-icons__link"
+                href="https://cloud.google.com/docs"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Google Cloud documentation"
+                ><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg" alt="" width="40" height="40" decoding="async" loading="lazy" /><span>GCP</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h2 class="section-title reveal">About</h2>
+          <div class="about-grid">
+            <div class="about-card reveal">
+              <p>
+                I’m an IT professional focused on <strong>Java</strong> and <strong>Spring Boot</strong>
+                on the backend and <strong>Angular</strong> / <strong>React</strong> on the frontend. I
+                enjoy turning complex problems into dependable systems—whether that’s scalable APIs for
+                enterprise clients or intuitive course-management experiences.
+              </p>
+              <p>
+                My stack also includes <strong>MySQL</strong>, <strong>MongoDB</strong>, <strong>Cassandra</strong>,
+                <strong>Docker</strong>, and <strong>Jenkins</strong>. I lean into <strong>software architecture</strong>
+                and <strong>system design</strong> so features stay coherent as systems grow — certified in
+                <strong>Google Cloud Digital Leader</strong> and <strong>Core Java</strong> (JetBrains Academy) among my
+                formal credentials. I also invest in <strong>generative AI</strong>,
+                <strong>DSA</strong>, and <strong>design patterns</strong> alongside delivery — consistent with how I
+                describe growth on my public <a href="https://www.linkedin.com/in/praveen-kanna-ayyasamy" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
+              </p>
+            </div>
+            <aside class="about-meta reveal" data-reveal-delay="80">
+              <dl>
+                <dt>Current</dt>
+                <dd>Associate Software Engineer · Vivriti Capital</dd>
+                <dt>Location</dt>
+                <dd>Chennai, Tamil Nadu</dd>
+                <dt>Focus</dt>
+                <dd>APIs, system design, software architecture, cloud-aware delivery</dd>
+              </dl>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="container">
+          <h2 class="section-title reveal">Experience</h2>
+          <ol class="timeline">
+            <li class="timeline-item reveal">
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-card">
+                <h3>Associate Software Engineer</h3>
+                <p class="timeline-company">Vivriti Capital</p>
+                <p class="timeline-dates">Mar 2025 – Present · Chennai, India</p>
+                <p class="timeline-role">Engineering &amp; technical · Specialist</p>
+                <p class="timeline-desc">
+                  Building <strong>enterprise-grade Supply Chain Finance (SCF)</strong> platforms — secure, scalable,
+                  high-performance backends for <strong>lending</strong>, <strong>onboarding</strong>,
+                  <strong>payments</strong>, and end-to-end financial workflows across customer and partner journeys.
+                </p>
+                <ul class="timeline-highlights">
+                  <li>
+                    Designed and delivered the <strong>SCF Portal</strong>, <strong>Counterparty Portal</strong>, and
+                    <strong>Anchor Portal</strong> using <strong>Java 21</strong> and <strong>Spring Boot 3</strong> —
+                    new applications and core platform modules from the ground up to production.
+                  </li>
+                  <li>
+                    Built <strong>REST APIs</strong> and services for onboarding, loan processing, document handling,
+                    payment integrations, and regulated financial workflows.
+                  </li>
+                  <li>
+                    Implemented <strong>Spring Security</strong>, <strong>Keycloak</strong>, <strong>JWT</strong>, and
+                    <strong>RBAC</strong> for authentication and fine-grained authorization.
+                  </li>
+                  <li>
+                    Shipped platform capabilities including <strong>DMS</strong>, <strong>invoice OCR</strong>,
+                    <strong>loan booking</strong>, <strong>penny drop</strong> verification, <strong>VPay</strong>, and
+                    <strong>CIBIL</strong> bureau integration — plus <strong>audit logging</strong>,
+                    <strong>notifications</strong>, and <strong>request tracking</strong> for compliance and
+                    operational visibility.
+                  </li>
+                  <li>
+                    Collaborated with <strong>product owners</strong>, business, <strong>QA</strong>, and engineering to
+                    ship maintainable software at scale.
+                  </li>
+                  <li>
+                    Contributed across <strong>system design</strong>, <strong>software architecture</strong>,
+                    <strong>API design</strong>, performance tuning, and <strong>production support</strong>.
+                  </li>
+                </ul>
+                <p class="timeline-tech">
+                  <strong>Technologies</strong>
+                  Java 21, Spring Boot 3, Spring Security, Keycloak, JWT, MySQL, MongoDB, REST APIs, Docker, Jenkins, Git
+                </p>
+              </div>
+            </li>
+            <li class="timeline-item reveal" data-reveal-delay="60">
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-card">
+                <h3>Associate Software Engineer</h3>
+                <p class="timeline-company">Grid Dynamics</p>
+                <p class="timeline-dates">May 2023 – Feb 2025 · Chennai, India</p>
+                <p class="timeline-role">Engineering &amp; technical · Specialist</p>
+                <p class="timeline-desc">
+                  Delivered <strong>enterprise-scale e-commerce</strong> solutions for
+                  <strong>Forever Living Products</strong> — backend systems supporting global customer and order
+                  operations for a large wellness and commerce program.
+                </p>
+                <ul class="timeline-highlights">
+                  <li>
+                    Designed and built <strong>backend services</strong> for <strong>Customer</strong> and
+                    <strong>Order Management</strong> using <strong>Java</strong> and <strong>Spring Boot</strong>.
+                  </li>
+                  <li>
+                    Implemented and extended <strong>REST APIs</strong> across the customer lifecycle, order processing,
+                    and core business workflows.
+                  </li>
+                  <li>
+                    Integrated services with enterprise applications while improving <strong>scalability</strong>,
+                    <strong>performance</strong>, and <strong>maintainability</strong>.
+                  </li>
+                  <li>
+                    Partnered with <strong>distributed engineering teams</strong> in an Agile cadence — code reviews,
+                    debugging, testing, and production support for reliable releases.
+                  </li>
+                </ul>
+                <p class="timeline-tech">
+                  <strong>Technologies</strong>
+                  Java, Spring Boot, Angular, React, MySQL, REST APIs, Docker, Jenkins, Git
+                </p>
+              </div>
+            </li>
+            <li class="timeline-item reveal" data-reveal-delay="120">
+              <div class="timeline-marker" aria-hidden="true"></div>
+              <div class="timeline-card">
+                <h3>Software Engineering Trainee</h3>
+                <p class="timeline-company">NextSphere Technologies (a Grid Dynamics company)</p>
+                <p class="timeline-dates">Feb 2023 – May 2023 · Chennai, India</p>
+                <p class="timeline-role">Engineering &amp; technical · Intern</p>
+                <p class="timeline-desc">
+                  Intensive <strong>full-stack</strong> training and project work — establishing a foundation in
+                  enterprise patterns, APIs, and how professional teams ship quality software.
+                </p>
+                <ul class="timeline-highlights">
+                  <li>
+                    Applied <strong>Java</strong>, <strong>Spring Boot</strong>, <strong>Angular</strong>, SQL,
+                    HTML/CSS, JavaScript, and <strong>REST API</strong> development in guided projects.
+                  </li>
+                  <li>
+                    Built <strong>CRUD</strong> applications with Spring Boot, Angular, <strong>Spring Data JPA</strong>,
+                    and MySQL end to end.
+                  </li>
+                  <li>
+                    Strengthened <strong>OOP</strong>, <strong>DSA</strong>, <strong>design patterns</strong>, and core
+                    software engineering practices.
+                  </li>
+                  <li>
+                    Practiced <strong>Git</strong>, debugging, code reviews, testing, and Agile delivery with mentor
+                    feedback.
+                  </li>
+                </ul>
+                <p class="timeline-tech">
+                  <strong>Technologies</strong>
+                  Java, Spring Boot, Angular, MySQL, HTML, CSS, JavaScript, REST APIs, Git
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <h2 class="section-title reveal">Selected work</h2>
+          <p class="section-subtitle reveal">Case-style highlights from recent roles.</p>
+          <div class="project-grid">
+            <article class="project-card reveal">
+              <div class="project-strip" aria-hidden="true"></div>
+              <h3>Supply Chain Finance &amp; portals (Vivriti)</h3>
+              <ul class="project-case">
+                <li>
+                  <strong>Context:</strong> enterprise SCF platform — Anchor, Counterparty, and SCF portals with lending,
+                  onboarding, payments, and compliance-heavy workflows.
+                </li>
+                <li>
+                  <strong>Challenge:</strong> ship secure APIs, integrations (e.g. bureau, payments, documents), and
+                  platform services without breaking regulated flows.
+                </li>
+                <li>
+                  <strong>Outcome:</strong> production modules from Java 21 / Spring Boot 3 with strong auth, auditability,
+                  and operational visibility — see experience for detail.
+                </li>
+              </ul>
+              <ul class="project-tags">
+                <li>Java 21</li>
+                <li>Spring Boot 3</li>
+                <li>Keycloak</li>
+              </ul>
+            </article>
+            <article class="project-card reveal" data-reveal-delay="80">
+              <div class="project-strip project-strip--alt" aria-hidden="true"></div>
+              <h3>Customer &amp; order services (FLP)</h3>
+              <ul class="project-case">
+                <li>
+                  <strong>Context:</strong> Grid Dynamics engagement for <strong>Forever Living Products</strong> —
+                  global e-commerce and order operations.
+                </li>
+                <li>
+                  <strong>Challenge:</strong> extend customer and order backends with clear APIs and dependable release
+                  quality.
+                </li>
+                <li>
+                  <strong>Outcome:</strong> Spring Boot services and REST APIs supporting lifecycle and order workflows,
+                  with Docker/Jenkins in the delivery path.
+                </li>
+              </ul>
+              <ul class="project-tags">
+                <li>Spring Boot</li>
+                <li>Angular</li>
+                <li>React</li>
+              </ul>
+            </article>
+            <article class="project-card reveal" data-reveal-delay="160">
+              <div class="project-strip project-strip--wide" aria-hidden="true"></div>
+              <h3>Online Course Management System</h3>
+              <ul class="project-case">
+                <li>
+                  <strong>Context:</strong> same initiative highlighted on LinkedIn — an intuitive system for managing
+                  courses and learners, not only CRUD screens.
+                </li>
+                <li>
+                  <strong>Challenge:</strong> pair a solid Spring Boot backend with a clear, responsive Angular UI and
+                  reliable MySQL data.
+                </li>
+                <li>
+                  <strong>Outcome:</strong> user-centric flows with Spring Boot, Angular, and MySQL that stayed
+                  maintainable as requirements grew.
+                </li>
+              </ul>
+              <ul class="project-tags">
+                <li>Angular</li>
+                <li>Spring Boot</li>
+                <li>MySQL</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="my-builds" class="section section--alt">
+        <div class="container">
+          <h2 class="section-title reveal">My builds</h2>
+          <p class="section-subtitle reveal">Demos and repositories with live links.</p>
+          <div class="build-grid">
+            <article class="build-card reveal">
+              <div class="build-card__strip" aria-hidden="true"></div>
+              <header class="build-card__head">
+                <h3>Game</h3>
+                <span class="build-card__lang">Java</span>
+              </header>
+              <p class="build-card__desc">
+                Backend / game logic in Java — README documents how to run locally and extend the project.
+              </p>
+              <ul class="build-card__tags">
+                <li>Java</li>
+                <li>GitHub</li>
+              </ul>
+              <div class="build-links">
+                <a
+                  class="build-link build-link--primary"
+                  href="https://github.com/PraveenKannaAyyasamy/Game#readme"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >README &amp; run</a
+                >
+                <a class="build-link" href="https://github.com/PraveenKannaAyyasamy/Game" target="_blank" rel="noopener noreferrer">Source</a>
+              </div>
+            </article>
+            <article class="build-card reveal" data-reveal-delay="60">
+              <div class="build-card__strip build-card__strip--alt" aria-hidden="true"></div>
+              <header class="build-card__head">
+                <h3>GameFrontEnd</h3>
+                <span class="build-card__lang build-card__lang--ts">TypeScript</span>
+              </header>
+              <p class="build-card__desc">
+                TypeScript frontend for the game — hosted on GitHub Pages with a production-style deploy path.
+              </p>
+              <ul class="build-card__tags">
+                <li>TypeScript</li>
+                <li>Web</li>
+              </ul>
+              <div class="build-links">
+                <a
+                  class="build-link build-link--primary"
+                  href="https://praveenkannaayyasamy.github.io/GameFrontEnd/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live</a
+                >
+                <a
+                  class="build-link"
+                  href="https://github.com/PraveenKannaAyyasamy/GameFrontEnd"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Source</a
+                >
+              </div>
+            </article>
+            <article class="build-card reveal" data-reveal-delay="120">
+              <div class="build-card__strip build-card__strip--wide" aria-hidden="true"></div>
+              <header class="build-card__head">
+                <h3>Portfolio site</h3>
+                <span class="build-card__lang build-card__lang--web">Static</span>
+              </header>
+              <p class="build-card__desc">
+                This site: semantic HTML, CSS design tokens, dark mode, GitHub grid, and a small JS layer. Point Live at
+                your deployed URL; Source should be the repo that contains this project root.
+              </p>
+              <ul class="build-card__tags">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+              </ul>
+              <div class="build-links">
+                <a
+                  class="build-link build-link--primary"
+                  href="https://praveenkannaayyasamy.github.io/portfolio/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live</a
+                >
+                <a
+                  class="build-link"
+                  href="https://github.com/PraveenKannaAyyasamy/portfolio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Source</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="repos" class="section">
+        <div class="container">
+          <h2 class="section-title reveal" id="repos-heading">GitHub</h2>
+          <p class="section-subtitle reveal">
+            Public repositories load from the GitHub API in pages of twelve; use Load more for longer lists.
+          </p>
+          <div class="repo-showcase reveal" id="repo-showcase" aria-labelledby="repos-heading">
+            <p class="repo-showcase__status" id="repo-showcase-status" aria-live="polite">Loading…</p>
+            <ul class="repo-showcase__grid" id="repo-showcase-grid" role="list"></ul>
+            <div class="repo-showcase__actions" id="repo-showcase-actions" hidden>
+              <button type="button" class="btn btn-ghost repo-showcase__load-more" id="repo-showcase-load-more">
+                Load more
+              </button>
+            </div>
+            <p class="repo-showcase__fallback" id="repo-showcase-fallback" hidden>
+              <a href="https://github.com/PraveenKannaAyyasamy?tab=repositories" target="_blank" rel="noopener noreferrer"
+                >View all repositories on GitHub</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section section--alt">
+        <div class="container">
+          <h2 class="section-title reveal">Skills</h2>
+          <div class="skills-wrap reveal">
+            <div class="skill-group">
+              <h3>Backend</h3>
+              <ul class="skill-pills">
+                <li>Java 21</li>
+                <li>Spring Boot</li>
+                <li>Spring Security</li>
+                <li>REST APIs</li>
+                <li>MySQL</li>
+                <li>MongoDB</li>
+                <li>Keycloak</li>
+                <li>Cassandra</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h3>Frontend</h3>
+              <ul class="skill-pills">
+                <li>Angular</li>
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>HTML / CSS</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h3>Platform &amp; practices</h3>
+              <ul class="skill-pills">
+                <li>System design</li>
+                <li>Software architecture</li>
+                <li>Docker</li>
+                <li>Jenkins</li>
+                <li>Git</li>
+                <li>Design patterns</li>
+                <li>DSA</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="certifications" class="section">
+        <div class="container">
+          <h2 class="section-title reveal">Certifications</h2>
+          <ul class="cert-list">
+            <li class="cert-card reveal">
+              <span class="cert-badge cert-badge--jb" aria-hidden="true">J</span>
+              <div>
+                <h3>Core Java</h3>
+                <p>Certified · JetBrains Academy · Issued Oct 2023</p>
+                <a
+                  class="text-link"
+                  href="https://hyperskill.org/certificates/9cdab645-b327-480e-9480-76d1deb70bbf.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >View certificate</a
+                >
+              </div>
+            </li>
+            <li class="cert-card reveal" data-reveal-delay="80">
+              <span class="cert-badge" aria-hidden="true">G</span>
+              <div>
+                <h3>Google Cloud Digital Leader</h3>
+                <p>Certified · Google Cloud · Issued Mar 2023 · Expires Mar 2027</p>
+                <a
+                  class="text-link"
+                  href="https://credential.net/49353e8e-101a-46d6-9e80-898303f8ad4b"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >View credential</a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact section--alt">
+        <div class="container reveal">
+          <h2 class="section-title">Let’s connect</h2>
+          <p class="section-subtitle section-subtitle--center">
+            Open to backend, full-stack, and cloud-aware engineering roles.
+          </p>
+          <div class="contact-meta">
+            <p><strong>Languages:</strong> English (professional) · Tamil (native)</p>
+            <p><strong>Location &amp; time:</strong> Chennai, India · IST (UTC+5:30)</p>
+            <p><strong>Work:</strong> Chennai-based · open to worldwide remote roles and international relocation for the right team.</p>
+          </div>
+          <div class="contact-actions">
+            <a
+              class="btn btn-primary"
+              href="resume/Praveen-Kanna-Resume.pdf"
+              download
+              target="_blank"
+              rel="noopener noreferrer"
+              >Résumé (PDF)</a
+            >
+            <a class="btn btn-ghost" href="resume.html" target="_blank" rel="noopener noreferrer">Printable CV</a>
+            <a
+              class="btn btn-ghost"
+              href="https://www.linkedin.com/in/praveen-kanna-ayyasamy"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+            <a
+              class="btn btn-ghost"
+              href="https://github.com/PraveenKannaAyyasamy"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+            <a
+              class="btn btn-ghost"
+              href="https://www.instagram.com/praveenkannaayyasamy/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram — technical engineering content"
+              title="Technical posts: demos, tips, and build notes"
+              >Instagram</a
+            >
+            <a
+              class="btn btn-ghost"
+              href="https://www.youtube.com/@PraveenKannaAyyasamy"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube — technical engineering videos"
+              title="Technical videos: walkthroughs and deep dives"
+              >YouTube</a
+            >
+            <a
+              class="btn btn-ghost"
+              href="https://medium.com/@praveenkannaayyasamy"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Medium — technical articles"
+              title="Longer technical articles"
+              >Medium</a
+            >
+            <a class="btn btn-ghost" href="mailto:praveenkanna530@gmail.com">Email</a>
+            <button type="button" class="btn btn-ghost btn-copy" id="copy-email" data-email="praveenkanna530@gmail.com">
+              Copy email
+            </button>
+            <a class="btn btn-ghost" href="tel:+917904632158">+91 79046 32158</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-top">
+          <p class="footer-copy">
+            © <span id="year"></span> Praveen Kanna · Built as a static portfolio.
+            <span class="footer-social">
+              <a href="https://github.com/PraveenKannaAyyasamy" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://www.linkedin.com/in/praveen-kanna-ayyasamy" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a
+                href="https://www.instagram.com/praveenkannaayyasamy/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Technical engineering posts"
+                >Instagram <span class="footer-social-tech">(tech)</span></a
+              >
+              <a
+                href="https://www.youtube.com/@PraveenKannaAyyasamy"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Technical engineering videos"
+                >YouTube <span class="footer-social-tech">(tech)</span></a
+              >
+              <a
+                href="https://medium.com/@praveenkannaayyasamy"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Technical articles on Medium"
+                >Medium</a
+              >
+            </span>
+          </p>
+          <p class="footer-colors" aria-hidden="true">
+            <span class="footer-dot footer-dot--b" data-footer-dot="0"></span>
+            <span class="footer-dot footer-dot--r" data-footer-dot="1"></span>
+            <span class="footer-dot footer-dot--y" data-footer-dot="2"></span>
+            <span class="footer-dot footer-dot--g" data-footer-dot="3"></span>
+          </p>
+        </div>
+        <nav class="footer-sections" aria-labelledby="footer-nav-label">
+          <p class="footer-sections__label" id="footer-nav-label">On this page</p>
+          <ul class="footer-sections__list">
+            <li><a class="footer-sections__link" href="#my-builds">My builds</a></li>
+            <li><a class="footer-sections__link" href="#repos">GitHub repos</a></li>
+            <li><a class="footer-sections__link" href="#skills">Skills</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <div id="fun-toast" class="fun-toast" role="status" aria-live="polite" hidden></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

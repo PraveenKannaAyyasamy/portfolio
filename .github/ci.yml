@@ -1,0 +1,34 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+
+jobs:
+  html5:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate HTML5
+        run: |
+          pip install --disable-pip-version-check "html5validator==0.4.2"
+          html5validator index.html resume.html now.html uses.html 404.html
+
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check links (site base)
+        uses: lycheeverse/lychee-action@v2
+        with:
+          fail: true
+          args: >-
+            --base https://praveenkannaayyasamy.github.io/portfolio/
+            --verbose
+            --no-progress
+            "./**/*.html"
+            "./**/*.md"

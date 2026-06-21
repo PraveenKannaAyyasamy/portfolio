@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="robots" content="noindex" />
+    <title>Now · Praveen Kanna</title>
+    <meta
+      name="description"
+      content="What Praveen Kanna is focused on lately — work, learning, and where to find technical writing."
+    />
+    <link rel="canonical" href="https://praveenkannaayyasamy.github.io/portfolio/now.html" />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t === "dark" || (!t && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+            document.documentElement.setAttribute("data-theme", "dark");
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#now-main">Skip to content</a>
+    <p class="container now-topbar">
+      <a class="text-link" href="index.html">← Back to portfolio</a>
+    </p>
+
+    <main id="now-main" class="section">
+      <div class="container" style="padding-top: 0.5rem">
+        <h1 class="section-title" style="margin-bottom: 0.5rem">Now</h1>
+        <p class="section-subtitle" style="margin-bottom: 2rem">
+          Lightweight “living snapshot” — update the dates and bullets whenever your story shifts.
+        </p>
+
+        <article class="education-card" style="margin-bottom: 1.5rem">
+          <h2 class="education-card__sub" style="margin-top: 0">Last updated</h2>
+          <p class="education-card__meta">June 2026</p>
+        </article>
+
+        <article class="education-card" style="margin-bottom: 1.5rem">
+          <h2 class="education-card__sub" style="margin-top: 0">Currently</h2>
+          <p>
+            Associate Software Engineer at <strong>Vivriti Capital</strong> (Chennai) — building regulated
+            <strong>Supply Chain Finance</strong> backends with <strong>Java 21</strong>,
+            <strong>Spring Boot 3</strong>, and strong auth patterns (<strong>Keycloak</strong>,
+            <strong>JWT</strong>, <strong>RBAC</strong>).
+          </p>
+        </article>
+
+        <article class="education-card" style="margin-bottom: 1.5rem">
+          <h2 class="education-card__sub" style="margin-top: 0">Learning &amp; depth</h2>
+          <p>
+            Continuing work in <strong>system design</strong>, <strong>software architecture</strong>,
+            <strong>DSA</strong>, <strong>design patterns</strong>, and <strong>GenAI</strong> alongside delivery
+            (aligned with my public
+            <a href="https://www.linkedin.com/in/praveen-kanna-ayyasamy">LinkedIn</a> narrative).
+          </p>
+        </article>
+
+        <article class="education-card">
+          <h2 class="education-card__sub" style="margin-top: 0">Technical writing &amp; channels</h2>
+          <p>
+            Longer posts on
+            <a href="https://medium.com/@praveenkannaayyasamy" target="_blank" rel="noopener noreferrer">Medium</a>;
+            shorter engineering notes on
+            <a href="https://www.instagram.com/praveenkannaayyasamy/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            and
+            <a href="https://www.youtube.com/@PraveenKannaAyyasamy" target="_blank" rel="noopener noreferrer">YouTube</a>.
+            Stack, editor, and how this site is built: <a href="uses.html">Uses</a>.
+          </p>
+        </article>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-copy">© <span id="year"></span> Praveen Kanna · <a href="index.html">Portfolio</a></p>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = String(new Date().getFullYear());
+    </script>
+  </body>
+</html>
